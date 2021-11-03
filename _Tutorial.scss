@@ -1,0 +1,87 @@
+// 1- what is sass ??
+// https://www.w3schools.com/sass/
+/* ----------------------------------------------- */
+// 2- installation
+/* ----------------------------------------------- */
+// 3 and 4 - syntax and nesting
+// https://www.sassmeister.com/
+header {
+    .h1 {
+      color: blue;
+      font-size: 30px;
+    }
+}
+/* ----------------------------------------------- */
+// 5 - variables
+// it is available in css3 now
+$maincolor: #777;
+$secondarycolor: #999;
+$color3: blue ;
+$padding-right-left: 30px;
+
+.class {
+    background-color: $color3 ;
+    padding: 0 $padding-right-left ;
+    }
+
+/* ----------------------------------------------- */
+// 6- operators
+$mainfont: 30px ;
+
+.class-parent {
+    font-size: $mainfont ;
+    .class-child{
+        font-size: $mainfont *0.4 ;
+    }
+    }
+
+/* ----------------------------------------------- */
+// 7- extend
+// to repeat properties from class into another
+.class1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+.class2 {
+    @extend .class1;
+    color: blue ;
+    }
+
+/* ----------------------------------------------- */
+// 8- placeholder
+// if iam not gonna use .class itself
+%class1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+.content2 {
+    @extend %class1;
+    color: blue ;
+    }
+/* ----------------------------------------------- */
+// 9- import 
+@import url('filename.scss');
+/* ----------------------------------------------- */
+// 10- mixin
+@mixin imgRad($r){
+    border-image: $r;
+    -o-border-image: $r;
+    -moz-border-image: $r;
+}
+/* ----------------------------------------------- */
+// 11- if condition
+$direction : ltr ;
+@if $direction ==ltr {
+    $float-right : right ;
+    $float-left : left ;
+} @else {
+    $float-right : left ;
+    $float-left : right ;
+    }  
+/* ----------------------------------------------- */
