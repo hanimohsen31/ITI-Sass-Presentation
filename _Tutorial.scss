@@ -2,6 +2,9 @@
 // https://www.w3schools.com/sass/
 /* ----------------------------------------------- */
 // 2- installation
+// vs code extensions
+// Live Sass Compiler
+// Sass
 /* ----------------------------------------------- */
 // 3 and 4 - syntax and nesting
 // https://www.sassmeister.com/
@@ -23,21 +26,18 @@ $padding-right-left: 30px;
     background-color: $color3 ;
     padding: 0 $padding-right-left ;
     }
-
 /* ----------------------------------------------- */
 // 6- operators
 $mainfont: 30px ;
-
 .class-parent {
     font-size: $mainfont ;
     .class-child{
         font-size: $mainfont *0.4 ;
     }
-    }
-
+}
 /* ----------------------------------------------- */
 // 7- extend
-// to repeat properties from class into another
+// to inherite properties from class into another
 .class1 {
     display: flex;
     flex-direction: column;
@@ -49,10 +49,9 @@ $mainfont: 30px ;
     @extend .class1;
     color: blue ;
     }
-
 /* ----------------------------------------------- */
 // 8- placeholder
-// if iam not gonna use .class itself
+// to create a class iam not gonna use but only use it as an @extend class
 %class1 {
     display: flex;
     flex-direction: column;
@@ -84,6 +83,19 @@ $direction : ltr ;
     $float-right : left ;
     $float-left : right ;
     }  
+/* ----------------------------------------------- */
+// 12- extra info ==> WATCH process
+/*
+if you see any file named like "_style.scss"
+the sign "_" befor the file name means for sass extension to not RENDER or WATCH this file
+for example :
+there is 2 files in this repo called "_style2.sass" and "_Tutorial.scss" this will not generate a css files
+and you can try to rename or create other files without "_"
+=========
+you should know the WATCH process will watch all files with extensions ".sass" and ".scss"
+in the folder and all of subfolders 
+unless the file name starts with "_" like ==> "_style2.sass"
+*/
 /* ----------------------------------------------- */
 // resources
 /*

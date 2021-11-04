@@ -1,0 +1,36 @@
+$maincolor:#777;
+$secondarycolor:#999;
+$color3cards:#add8e6;
+$margin-t-b:25px;
+
+body{
+    text-align: center;
+    header{
+        margin: 25px auto;
+        h1 {
+            font-size: 50px;
+            color: $maincolor;
+        }
+    }    
+    .content{
+        .card{
+            img {
+                opacity: 90%;
+            }
+            .h3{
+                color:$color3cards;
+            }
+        }
+        .paragraph{
+            margin: 25px auto;
+            p{
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 3;
+                color: $secondarycolor;
+                width: 50% ;
+                margin: auto;
+            }
+        }
+    }
+}

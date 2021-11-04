@@ -1,43 +1,34 @@
-/* 
-$maincolor:#777;
-$secondarycolor:#999;
-$color3cards:#add8e6;
-$margin-t-b:25px;
-*/
-
-*{
-    box-sizing: border-box;
-}
-body{
-    text-align: center;
+body {
+  text-align: center;
 }
 
-header{
-    margin: 25px auto;
+body header {
+  margin: 25px auto;
 }
 
-header h1 {
-    font-size: 50px;
-    color: #777;
-}
-.card img {
-    opacity: 90%;
-
+body header h1 {
+  font-size: 50px;
+  color: #777;
 }
 
-.h3{
-    color:#add8e6;
+body .content .card img {
+  opacity: 90%;
 }
 
-.paragraph p{
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 3;
-    color: #999;
-    width: 50% ;
-    margin: auto;
+body .content .card .h3 {
+  color: #add8e6;
 }
 
-.paragraph{
-    margin: 25px auto;
+body .content .paragraph {
+  margin: 25px auto;
 }
+
+body .content .paragraph p {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 3;
+  color: #999;
+  width: 50%;
+  margin: auto;
+}
+/*# sourceMappingURL=style.css.map */
